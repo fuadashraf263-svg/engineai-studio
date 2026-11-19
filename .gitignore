@@ -1,0 +1,80 @@
+# --- generated output, never commit ---
+out/
+work/
+library/
+*.stl
+*.step
+*.stp
+*.png
+*.jpg
+*.dxf
+*.pdf
+
+# --- databases and state ---
+*.db
+*.sqlite
+journal.db
+.last_part.json
+
+# --- secrets ---
+.env
+.owner.json
+.keypool.json
+audit.log
+
+# --- installers, archives, models: these break GitHub's 100 MB limit ---
+*.sh.download
+Miniconda*.sh
+Anaconda*.sh
+*.run
+*.bin
+*.deb
+*.rpm
+*.AppImage
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.iso
+*.gguf
+*.safetensors
+*.pt
+
+# --- tool side-effects: skidl writes <script>.log/.erc next to whatever imports it ---
+*.erc
+*.log
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+books/
+Miniconda3-latest-Linux-x86_64.sh
+*.bak
+node_modules/
+proposals/_broken/
+research_output/
+_msg.txt
+
+# live battery output - churns every 20 seconds while a run is going
+data/qbank_results.jsonl
+data/*.log
+out/sandbox/
+_tidy.sh
+
+data/qbank_results.contaminated.jsonl
+_start_bank.sh
+_stop_bank.sh
+data/numeric_results.jsonl
+_restart_wb.sh
+data/workbench.pid
+_e2e.py
+data/ab.pid
+data/ab_run.log
+data/ab_result.json
+_start_ab.sh
+_ab_status.sh
+web/node_modules/
+web/.next/

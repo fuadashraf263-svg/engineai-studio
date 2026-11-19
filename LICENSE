@@ -1,0 +1,68 @@
+Copyright (c) 2026 Fuad Ashraf
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+ENGINEERING DISCLAIMER - READ THIS PART
+================================================================================
+
+This software performs engineering calculations. It is NOT a substitute for a
+qualified engineer, and nothing it produces is a certified design.
+
+  - Every output is UNCERTIFIED. The software will not stamp, certify or
+    approve any design, and refuses requests to do so.
+  - Results must be independently checked by a competent person before being
+    used for anything that can hurt someone or cost money.
+  - The authors accept no liability for decisions made using this software.
+    See the warranty disclaimer above; it applies in full to engineering
+    output, not only to the code.
+
+================================================================================
+THIRD-PARTY COMPONENTS AND DATA
+================================================================================
+
+The MIT licence above covers ONLY the original source in this repository. It
+does not cover, and cannot grant rights to:
+
+SOLVERS invoked by this software, each under its own licence:
+  CalculiX (GPL-2.0), OpenFOAM (GPL-3.0), Elmer FEM (LGPL-2.1 / GPL-2.0),
+  ngspice (BSD-3-Clause / GPL), gmsh (GPL-2.0), FreeCAD (LGPL-2.1),
+  PyChrono (BSD-3-Clause), pycalphad (MIT).
+Invoking a GPL program as a separate process does not make this software GPL,
+but redistributing those binaries does carry their terms. They are NOT
+redistributed here; they are expected to be installed by the user.
+
+STANDARDS. Eurocodes, ISO, ASME, ASTM, API, IEC and DIN documents are
+copyrighted by their publishers and are NOT included. Where this software
+implements a calculation defined by a standard, it implements the FORMULA the
+standard specifies and uses published tables only as test oracles. Clause text
+is not reproduced. Users needing the standard must license it themselves.
+
+REFERENCE DATA. CODATA constants, NIST thermochemical data, IAPWS-IF97 and the
+ISA atmosphere are used under their own public terms and are cited in
+refdata.py.
+
+RESEARCH DATASETS fetched by data_fetch.py or research_corpus/scripts remain
+under the licences of their depositors. They are NOT redistributed with this
+repository - research_corpus/.gitignore excludes them deliberately. Files whose
+licence cannot be determined are placed in a quarantine directory and marked
+local-use-only; do not publish or redistribute those.
+
+LANGUAGE MODELS. Any model served through Ollama or a cloud API carries its own
+licence and terms of use. Check them before commercial deployment.

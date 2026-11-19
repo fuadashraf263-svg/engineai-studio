@@ -1,0 +1,169 @@
+[
+  {
+    "id": "stat-01",
+    "tier": "handbook",
+    "topic": "beam",
+    "q": "Cantilever, steel E=210 GPa, length 1 m, second moment 4.1667e-6 m^4, tip load 1000 N. Tip deflection?",
+    "call": [
+      "cantilever_tip_deflection",
+      1000,
+      1.0,
+      210000000000.0,
+      4.1667e-06
+    ],
+    "answer": 0.000381,
+    "units": "m",
+    "tol_pct": 1.0
+  },
+  {
+    "id": "stat-02",
+    "tier": "handbook",
+    "topic": "buckling",
+    "q": "Euler critical load, pinned steel column, E=210 GPa, I=1e-8 m^4, L=1 m, K=1.",
+    "call": [
+      "euler_buckling",
+      210000000000.0,
+      1e-08,
+      1.0,
+      1.0
+    ],
+    "answer": 20739.2,
+    "units": "N",
+    "tol_pct": 1.0
+  },
+  {
+    "id": "fluid-01",
+    "tier": "handbook",
+    "topic": "pipe",
+    "q": "Reynolds number, water at 2 m/s in a 25 mm pipe.",
+    "call": [
+      "reynolds",
+      998.2,
+      2.0,
+      0.025,
+      0.001002
+    ],
+    "answer": 49810.4,
+    "units": "-",
+    "tol_pct": 0.5
+  },
+  {
+    "id": "fluid-02",
+    "tier": "handbook",
+    "topic": "pipe",
+    "q": "Laminar Darcy friction factor at Re = 1000.",
+    "call": [
+      "friction_factor",
+      1000
+    ],
+    "answer": 0.064,
+    "units": "-",
+    "tol_pct": 0.5
+  },
+  {
+    "id": "thermo-01",
+    "tier": "handbook",
+    "topic": "conduction",
+    "q": "1-D conduction: k=200 W/mK, A=0.01 m^2, dT=50 K, L=0.1 m. Q?",
+    "call": [
+      "fourier_conduction",
+      200,
+      0.01,
+      50,
+      0.1
+    ],
+    "answer": 1000.0,
+    "units": "W",
+    "tol_pct": 0.5
+  },
+  {
+    "id": "thermo-02",
+    "tier": "handbook",
+    "topic": "gas dynamics",
+    "q": "Speed of sound in air at 288.15 K (gamma 1.4, R 287.05).",
+    "call": [
+      "speed_of_sound",
+      1.4,
+      287.05,
+      288.15
+    ],
+    "answer": 340.29,
+    "units": "m/s",
+    "tol_pct": 0.5
+  },
+  {
+    "id": "elec-01",
+    "tier": "handbook",
+    "topic": "circuits",
+    "q": "RC low-pass cutoff, R=1 kohm, C=1 uF.",
+    "call": [
+      "rc_cutoff",
+      1000,
+      1e-06
+    ],
+    "answer": 159.155,
+    "units": "Hz",
+    "tol_pct": 0.5
+  },
+  {
+    "id": "rot-01",
+    "tier": "handbook",
+    "topic": "rotordynamics",
+    "q": "Hoop stress in a thin steel ring (rho 7850) at 200 m/s tip.",
+    "call": [
+      "hoop_stress_rotating_ring",
+      7850,
+      200
+    ],
+    "answer": 314000000.0,
+    "units": "Pa",
+    "tol_pct": 0.5
+  },
+  {
+    "id": "unit-01",
+    "tier": "handbook",
+    "topic": "units",
+    "q": "Convert 300 psi to MPa.",
+    "call": [
+      "convert",
+      300,
+      "psi",
+      "MPa"
+    ],
+    "answer": 2.0684,
+    "units": "MPa",
+    "tol_pct": 0.1
+  },
+  {
+    "id": "mat-01",
+    "tier": "lookup",
+    "topic": "materials",
+    "q": "Yield strength of Al 7075-T6.",
+    "material": "Al7075-T6",
+    "field": "yield_MPa",
+    "answer": 503.0,
+    "units": "MPa",
+    "tol_pct": 0.1
+  },
+  {
+    "id": "mat-02",
+    "tier": "lookup",
+    "topic": "materials",
+    "q": "Density of Ti-6Al-4V.",
+    "material": "Ti6Al4V",
+    "field": "density_kg_m3",
+    "answer": 4430.0,
+    "units": "kg/m3",
+    "tol_pct": 0.1
+  },
+  {
+    "id": "open-01",
+    "tier": "none",
+    "topic": "research",
+    "q": "Derive the exact turbulent energy spectrum from first principles.",
+    "answer": null,
+    "units": "",
+    "tol_pct": null,
+    "must_refuse": true
+  }
+]

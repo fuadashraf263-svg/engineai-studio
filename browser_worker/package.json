@@ -1,0 +1,10 @@
+{
+  "name": "engineai-browser-worker",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local, approval-gated browser worker for EngineAI",
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.62.1"
+  }
+}

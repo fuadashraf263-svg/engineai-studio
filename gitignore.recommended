@@ -1,0 +1,48 @@
+# --- generated output, never commit ---
+out/
+work/
+library/
+*.stl
+*.step
+*.stp
+*.png
+*.jpg
+*.dxf
+*.pdf
+
+# --- databases and state ---
+*.db
+*.sqlite
+journal.db
+.last_part.json
+
+# --- secrets ---
+.env
+.owner.json
+.keypool.json
+audit.log
+
+# --- installers, archives, models: these break GitHub's 100 MB limit ---
+*.sh.download
+Miniconda*.sh
+Anaconda*.sh
+*.run
+*.bin
+*.deb
+*.rpm
+*.AppImage
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.iso
+*.gguf
+*.safetensors
+*.pt
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
