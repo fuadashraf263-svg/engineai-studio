@@ -125,7 +125,7 @@ nlopt==2.11.0
 numba
 numpy
 numpy-stl==4.0.0
-oauthlib==3.3.1
+oauthlib==4.0.1
 onnxruntime==1.28.0
 openmdao==3.45.0
 openpyxl==3.1.5
